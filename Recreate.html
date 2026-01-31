@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body{
+            background-image: url(web2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+        }
+        h3{
+           
+            font-size: 60px;
+            color: rgb(221, 68, 21);
+            margin-left: 750px;
+        }
+        h1{
+            font-size: 60px;
+            color: rgb(36, 236, 120) ;
+             margin-left: 750px;
+        }
+        nav{
+            background-color: lightslategray;
+            padding: 15px;
+            text-align: center;
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: pink;
+        }
+        .para p{
+           
+            font-size: 20px;
+            color: white;
+            margin-left: 750px;
+        }
+        #name {
+            font-size: 20px;
+            border-radius: 10px;
+            
+            background-color: orange;
+             margin-left: 750px;
+        }
+        .login-box{
+            background-color:black;
+            padding: 2px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            position:absolute;
+            bottom: 200px;
+            left: 150px;
+          
+        }
+        .login-box h2{
+            color:#fff;
+            margin-bottom: 1rem;
+        }
+        .login-box input{
+            width: 70%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+
+        }
+        .login-box button{
+            width: 70%;
+            padding: 10px;
+            background-color: #ff6600;
+            color: #fff;
+            border-radius: 10px;
+    
+        }
+        .login-box p{
+            color: white;
+        }
+        /* social media style */
+        #social {
+    
+    margin-top: 20px;
+}
+
+#social i {
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#social i:hover {
+    color: orange;
+}
+
+        </style>
+</head>
+<body>
+    <nav>
+    <a href="#">HOME</a>
+     <a href="#">ABOUT</a>
+      <a href="#">SERVICE</a>
+       <a href="#">DESIGN</a>
+        <a href="#">CONTACT</a>
+        </nav>
+        <div class="search-box">
+            <input type="search" placeholder="Type to searcplaceholderh" id="search-input"> 
+            <button type="submit">Search</button>
+        <h3>Web Design &</h3>
+        <h1>Development</h1>
+        
+           <h3>Course</h3>
+           <div class="para">
+           <p>Web Design is a specialisation of the design stream. They also use HTML.</p>
+           <p>CSS, WYSIWYG editing software. mark up validators etc.,<p>
+            <p>to create design elements</p>
+           </div>
+            <button id="name"> JOIN US</button>
+            
+           <div class="login-box">
+            <h2>Login here</h2>
+            <input type="email" placeholder="Enter Email here" required>
+            <input type="password" placeholder="Enter password here" required>
+          <button type="submit">Login</button>
+          <p>Don't havn an account?</p>
+          
+          <div id="social"></div>
+
+            </div>
+            
+
+
+<script>
+function socialIcons() {
+  return `
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-skype"></i>
+  `;
+}
+
+document.getElementById("social").innerHTML = socialIcons();
+</script>
+
+
+           
+</body>
+</html>
